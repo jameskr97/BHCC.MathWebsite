@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+//import { parse, evaluate } from '@cortex-js/compute-engine';
 import './App.css';
+import "//unpkg.com/mathlive"; // math live editable math field
+import {useState } from "react";
 
-function App() {
+const View = () =>{
+  const initialValue = "f(x) = \\frac{2x}{3}";
+  const [value, setValue] = useState(initialValue);
+
+
+  // parse the value 
+  //console.log(expr);
+// parses the expression into ["Element", ["Subtract", ["Power", 2, 11] , 1], "PrimeNumber"]
+
+//console.log(evaluate(expr));
+// evaluates the expression and verifies for "False"
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <math-field
+        onInput = {evt => setValue(evt.target.value)}
+        >{value}</math-field>
+        <p>Value: {value}</p>
     </div>
   );
-}
-
-export default App;
+  }
+export default View;
