@@ -28,6 +28,27 @@
   color: #61dafb;
 }
 
+app-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.math-field-container {
+  margin-top: 20px;
+}
+
+.math-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.value-display {
+  margin-top: 20px;
+  font-size: 18px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
