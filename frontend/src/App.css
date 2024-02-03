@@ -25,10 +25,21 @@ hr {
   pointer-events: none;
 }
 
+#equation-list {
+  padding-bottom: 10px;
+  text-align: left;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.fake-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .App-header {
