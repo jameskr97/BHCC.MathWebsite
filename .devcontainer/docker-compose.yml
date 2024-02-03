@@ -1,6 +1,5 @@
 version: '3.3'
 
-
 networks:
   devnet:
 
@@ -9,7 +8,6 @@ services:
       build:
         dockerfile: Frontend.dockerfile
       networks: [devnet]
-      command: sleep infnity
 
     mariadb:
       image: mariadb
