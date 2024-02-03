@@ -1,0 +1,16 @@
+{
+  "name": "express-mysql-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@cortex-js/compute-engine": "^0.23.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
