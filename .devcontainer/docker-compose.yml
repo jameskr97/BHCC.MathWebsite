@@ -1,0 +1,22 @@
+version: '3.3'
+
+
+networks:
+  devnet:
+
+services:
+    devcontainer:
+      build:
+        dockerfile: Frontend.dockerfile
+      networks: [devnet]
+      command: sleep infnity
+
+    mariadb:
+      image: mariadb
+      environment:
+        MYSQL_ROOT_PASSWORD: password
+      networks: [devnet]
+      volumes: [mariadb_data:/var/lib/mysql]
+
+volumes:
+  mariadb_data:

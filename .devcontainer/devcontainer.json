@@ -1,0 +1,6 @@
+{
+  "name": "MathWorkspace",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace"
+}
